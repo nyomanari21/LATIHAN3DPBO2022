@@ -31,6 +31,11 @@ class Processor{
 		return $this->price;
 	}
 
+	//destruktor
+	public function __destruct(){
+
+	}
+
 }
 
 ?>
