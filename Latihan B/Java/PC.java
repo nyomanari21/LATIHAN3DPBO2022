@@ -55,4 +55,29 @@ public class PC{
 		return this.totalPrice;
 	}
 
+	//method menampilkan data PC
+	public void printPC(){
+
+		System.out.println("-------------------------");
+		System.out.println("Processor");
+		System.out.println("----------");
+		System.out.println("Name     : " + pObj.getName());
+		System.out.println("Price    : Rp" + pObj.getPrice());
+		System.out.println("-------------------------");
+		System.out.println("Disk");
+		System.out.println("----------");
+		System.out.println("Type     : " + dObj.getType());
+		System.out.println("Capacity : " + dObj.getCapacity() + " GB");
+		System.out.println("Price    : Rp" + dObj.getPrice());
+		System.out.println("-------------------------");
+		System.out.println("Ram");
+		System.out.println("----------");
+		System.out.println("Capacity : " + rObj.getCapacity() + " GB");
+		System.out.println("Price    : Rp" + rObj.getPrice());
+		System.out.println("-------------------------");
+
+		System.out.println("Total Price: Rp" + this.totalPrice);
+
+	}
+
 }

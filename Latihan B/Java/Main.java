@@ -40,7 +40,7 @@ class Main{
 				System.out.println("=========================");
 				System.out.println("Masukkan data PC " + (maxProduct+1));
 				
-				//input tiap data produk
+				//input data processor
 				System.out.print("Processor Name  : ");
 				try{
 					nameProc = sc.next();
@@ -53,6 +53,9 @@ class Main{
 				}catch(Exception e){}
 				pObj[maxProduct].setPrice(priceProc);
 
+				pcObj[maxProduct].setProcessor(pObj[maxProduct]);
+
+				//input data disk
 				System.out.print("Disk Type       : ");
 				try{
 					typeDisk = sc.next();
@@ -71,6 +74,9 @@ class Main{
 				}catch(Exception e){}
 				dObj[maxProduct].setPrice(priceDisk);
 
+				pcObj[maxProduct].setDisk(dObj[maxProduct]);
+
+				//input data ram
 				System.out.print("Ram Capacity    : ");
 				try{
 					capacityRam = sc.nextInt();
@@ -82,6 +88,8 @@ class Main{
 					priceRam = sc.nextInt();
 				}catch(Exception e){}
 				rObj[maxProduct].setPrice(priceRam);
+
+				pcObj[maxProduct].setRam(rObj[maxProduct]);
 
 				pcObj[maxProduct].setTotalPrice(pObj[maxProduct].getPrice(), dObj[maxProduct].getPrice(), rObj[maxProduct].getPrice());
 
@@ -105,25 +113,7 @@ class Main{
 			System.out.println("\n=========================");
 			System.out.println("PC " + (i+1));
 			System.out.println("=========================");
-			System.out.println("-------------------------");
-			System.out.println("Processor");
-			System.out.println("----------");
-			System.out.println("Name     : " + pObj[i].getName());
-			System.out.println("Price    : " + pObj[i].getPrice());
-			System.out.println("-------------------------");
-			System.out.println("Disk");
-			System.out.println("----------");
-			System.out.println("Type     : " + dObj[i].getType());
-			System.out.println("Capacity : " + dObj[i].getCapacity() + " GB");
-			System.out.println("Price    : Rp" + dObj[i].getPrice());
-			System.out.println("-------------------------");
-			System.out.println("Ram");
-			System.out.println("----------");
-			System.out.println("Capacity : " + rObj[i].getCapacity() + " GB");
-			System.out.println("Price    : Rp" + rObj[i].getPrice());
-			System.out.println("-------------------------");
-
-			System.out.println("Total Price: Rp" + pcObj[i].getTotalPrice());
+			pcObj[i].printPC();
 
 		}
 
