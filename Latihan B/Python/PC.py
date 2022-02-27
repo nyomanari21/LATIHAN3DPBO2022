@@ -45,3 +45,24 @@ class PC():
 
 	def getTotalPrice(self):
 		return self.totalPrice
+
+	def printPC(self):
+		print("-------------------------")
+		print("Processor")
+		print("----------")
+		print("Name     : " + str(self.pObj.getName()))
+		print("Price    : Rp" + str(self.pObj.getPrice()))
+		print("-------------------------")
+		print("Disk")
+		print("----------")
+		print("Type     : " + str(self.dObj.getType()))
+		print("Capacity : " + str(self.dObj.getCapacity()) + " GB")
+		print("Price    : Rp" + str(self.dObj.getPrice()))
+		print("-------------------------")
+		print("Ram")
+		print("----------")
+		print("Capacity : " + str(self.rObj.getCapacity()) + " GB")
+		print("Price    : Rp" + str(self.rObj.getPrice()))
+		print("-------------------------")
+
+		print("Total Price: " + str(self.totalPrice))

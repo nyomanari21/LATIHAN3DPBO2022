@@ -24,13 +24,16 @@ while lanjut != 'n' and lanjut != 'N':
 		print("=========================")
 		print("Masukkan data produk " + str(maxProduct+1))
 
-		#input data tiap produk
+		#input data processor
 		nameProc = str(input("Processor Name  : "))
 		pObj[maxProduct].setName(nameProc)
 
 		priceProc = int(input("Processor Price : "))
 		pObj[maxProduct].setPrice(priceProc)
 
+		pcObj[maxProduct].setProcessor(pObj[maxProduct])
+
+		#input data disk
 		typeDisk = str(input("Disk Type       : "))
 		dObj[maxProduct].setType(typeDisk)
 
@@ -40,11 +43,16 @@ while lanjut != 'n' and lanjut != 'N':
 		priceDisk = int(input("Disk Price      : "))
 		dObj[maxProduct].setPrice(priceDisk)
 
+		pcObj[maxProduct].setDisk(dObj[maxProduct])
+
+		#input data ram
 		capacityRam = int(input("Ram Capacity    : "))
 		rObj[maxProduct].setCapacity(capacityRam)
 
 		priceRam = int(input("Ram Price       : "))
 		rObj[maxProduct].setPrice(priceRam)
+
+		pcObj[maxProduct].setRam(rObj[maxProduct])
 
 		pcObj[maxProduct].setTotalPrice(pObj[maxProduct].getPrice(), dObj[maxProduct].getPrice(), rObj[maxProduct].getPrice())
 
@@ -61,22 +69,4 @@ for i in range(maxProduct):
 	print("\n=========================")
 	print("PC " + str(i+1))
 	print("=========================")
-	print("-------------------------")
-	print("Processor")
-	print("----------")
-	print("Name     : " + str(pObj[i].getName()))
-	print("Price    : Rp" + str(pObj[i].getPrice()))
-	print("-------------------------")
-	print("Disk")
-	print("----------")
-	print("Type     : " + str(dObj[i].getType()))
-	print("Capacity : " + str(dObj[i].getCapacity()) + " GB")
-	print("Price    : Rp" + str(dObj[i].getPrice()))
-	print("-------------------------")
-	print("Ram")
-	print("----------")
-	print("Capacity : " + str(rObj[i].getCapacity()) + " GB")
-	print("Price    : Rp" + str(rObj[i].getPrice()))
-	print("-------------------------")
-
-	print("Total Price: " + str(pcObj[i].getTotalPrice()))
+	pcObj[i].printPC()
