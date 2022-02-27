@@ -16,7 +16,7 @@ User akan diminta untuk mengisi data PC yang dibutuhkan sampai user menginput 'n
 
 <br>
 <br>
-### Screenshot
+# Screenshot
 <br>
 <br>
 C++
