@@ -17,17 +17,25 @@ User akan diminta untuk mengisi data PC yang dibutuhkan sampai user menginput 'n
 Screenshot
 <br>
 <br>
+
 C++
+<br>
 ![SS C++](https://user-images.githubusercontent.com/90953569/155891544-658d1dab-8ae8-4c70-b739-caec97be8850.png)
 <br>
 <br>
+
 Java
+<br>
 ![SS Java](https://user-images.githubusercontent.com/90953569/155891556-ab399038-97df-4b56-a637-1b8c155b774f.png)
 <br>
 <br>
+
 Python
+<br>
 ![SS Python](https://user-images.githubusercontent.com/90953569/155891561-11136c00-f14a-4f12-b34a-ce5b376d6c99.png)
 <br>
 <br>
+
 PHP!
+<br>
 [SS PHP](https://user-images.githubusercontent.com/90953569/155891570-50c06ef1-6511-4ba7-87c4-7622c239a5d3.png)
