@@ -4,8 +4,6 @@ Saya Nyoman Ari Satyadharma 2000831 mengerjakan Latihan2DPBO2022 dalam mata kuli
 <br>
 <br>
 ## Penjelasan kode program
-<br>
-<br>
 Saya membuat kelas Processor, Disk, Ram, dan PC. Kelas Processor, Disk, dan Ram merupakan kelas komposit dari kelas PC
 <br>
 <br>
@@ -16,7 +14,7 @@ User akan diminta untuk mengisi data PC yang dibutuhkan sampai user menginput 'n
 
 <br>
 <br>
-# Screenshot
+Screenshot
 <br>
 <br>
 C++
