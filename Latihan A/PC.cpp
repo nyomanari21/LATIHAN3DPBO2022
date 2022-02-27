@@ -61,6 +61,30 @@ class PC{
 			return this->totalPrice;
 		}
 
+		void printPC(){
+
+			cout << "-------------------------" << endl;
+			cout << "Processor" << endl;
+			cout << "----------" << endl;
+			cout << "Name     : " << pObj.getName() << endl;
+			cout << "Price    : Rp" << pObj.getPrice() << endl;
+			cout << "-------------------------" << endl;
+			cout << "Disk" << endl;
+			cout << "----------" << endl;
+			cout << "Type     : " << dObj.getType() << endl;
+			cout << "Capacity : " << dObj.getCapacity() << " GB" << endl;
+			cout << "Price    : Rp" << dObj.getPrice() << endl;
+			cout << "-------------------------" << endl;
+			cout << "Ram" << endl;
+			cout << "----------" << endl;
+			cout << "Capacity : " << rObj.getCapacity() << " GB" << endl;
+			cout << "Price    : Rp" << rObj.getPrice() << endl;
+			cout << "-------------------------" << endl;
+
+			cout << "Total Price: Rp" << this->totalPrice << endl;
+
+		}
+
 		//destruktor
 		~PC(){
 

@@ -37,7 +37,7 @@ int main(){
 			cout << "=========================" << endl;
 			cout << "Masukkan data PC " << (i+1) << endl;
 
-			//input data PC
+			//input data Processor
 			cout << "Processor Name  : ";
 			cin >> nameProc;
 			pObj[i].setName(nameProc);
@@ -46,6 +46,9 @@ int main(){
 			cin >> priceProc;
 			pObj[i].setPrice(priceProc);
 
+			PCObj[i].setProcessor(pObj[i]);
+
+			//input data Disk
 			cout << "Disk Type       : ";
 			cin >> typeDisk;
 			dObj[i].setType(typeDisk);
@@ -58,6 +61,9 @@ int main(){
 			cin >> priceDisk;
 			dObj[i].setPrice(priceDisk);
 
+			PCObj[i].setDisk(dObj[i]);
+
+			//input data Ram
 			cout << "Ram Capacity    : ";
 			cin >> capacityRam;
 			rObj[i].setCapacity(capacityRam);
@@ -65,6 +71,8 @@ int main(){
 			cout << "Ram Price       : ";
 			cin >> priceRam;
 			rObj[i].setPrice(priceRam);
+
+			PCObj[i].setRam(rObj[i]);
 
 			PCObj[i].setTotalPrice(pObj[i].getPrice(), dObj[i].getPrice(), rObj[i].getPrice());
 
@@ -87,25 +95,7 @@ int main(){
 		cout << "\n=========================" << endl;
 		cout << "PC " << (i+1) << endl;
 		cout << "=========================" << endl;
-		cout << "-------------------------" << endl;
-		cout << "Processor" << endl;
-		cout << "----------" << endl;
-		cout << "Name     : " << pObj[i].getName() << endl;
-		cout << "Price    : Rp" << pObj[i].getPrice() << endl;
-		cout << "-------------------------" << endl;
-		cout << "Disk" << endl;
-		cout << "----------" << endl;
-		cout << "Type     : " << dObj[i].getType() << endl;
-		cout << "Capacity : " << dObj[i].getCapacity() << " GB" << endl;
-		cout << "Price    : Rp" << dObj[i].getPrice() << endl;
-		cout << "-------------------------" << endl;
-		cout << "Ram" << endl;
-		cout << "----------" << endl;
-		cout << "Capacity : " << rObj[i].getCapacity() << " GB" << endl;
-		cout << "Price    : Rp" << rObj[i].getPrice() << endl;
-		cout << "-------------------------" << endl;
-
-		cout << "Total Price: Rp" << PCObj[i].getTotalPrice() << endl;
+		PCObj[i].printPC();
 
 	}
 	
