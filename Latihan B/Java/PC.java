@@ -1,9 +1,9 @@
 public class PC{
 
 	//atribut private
-	Processor pObj; //data prosesor
-	Disk dObj; //data disk
-	Ram rObj; //data ram
+	Processor pObj = new Processor(); //data prosesor
+	Disk dObj = new Disk(); //data disk
+	Ram rObj = new Ram(); //data ram
 	int totalPrice; //total harga pc
 
 
