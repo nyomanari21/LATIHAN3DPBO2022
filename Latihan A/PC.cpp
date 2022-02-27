@@ -1,3 +1,7 @@
+#include "Processor.cpp"
+#include "Disk.cpp"
+#include "Ram.cpp"
+
 class PC{
 
 	private:
