@@ -22,14 +22,14 @@ class PC():
 	def setProcessor(self, pObj):
 		self.pObj = pObj
 
-	def getDisk(self):
+	def getProcessor(self):
 		return self.pObj
 
 	#getter dan setter atribut dObj
 	def setDisk(self, dObj):
 		self.dObj = dObj
 
-	def getProcessor(self):
+	def getDisk(self):
 		return self.dObj
 
 	#getter dan setter atribut rObj
